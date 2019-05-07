@@ -1,0 +1,85 @@
+site_name: cxy's NoteBook
+
+repo_url: https://github.com/ChuXiaoYi
+site_url: http:// www.chuxiaoyi.cn
+google_analytics: ['UA-36723568-3', 'mkdocs.org']
+
+site_author: 褚晓逸
+
+copyright: "author by ChuXiaoYi"
+
+nav:
+    - Python:
+        - Python中的上下文管理器和with语句: Python/python_with.md
+        - python3.7标准库:
+            - functools: Python/python_functools.md
+            - itertools: Python/python_itertools.md
+            - collections.namedtuple: Python/python_collections_namedtuple.md
+            - collections.deque: Python/python_collections_deque.md
+            - collections.ChainMap: Python/python_collections_chainmap.md
+            - collections.Counter: Python/python_collections_counter.md
+            - collections.OrderedDict: Python/python_collections_ordereddict.md
+    - Django:
+        - 项目实战:
+            - Django项目开发实战-博客: Django/django_blog-01.md
+        - django-rest-framework:
+            - django-rest-framework文档整理-Serialization（一）: Django/drf-01.md
+            - django-rest-framework文档整理-Request and Response（二）: Django/drf-02.md
+    - 其他:
+        - 七七八八: others/daily_problem.md
+        - 计算字符串相似度的一些方法: others/calculate_string_similar.md
+site_favicon: favicon.ico
+
+theme:
+    name: material
+    # custom_dir: custom_theme/
+    highlightjs: true
+    hljs_style: github
+    hljs_languages:
+        - yaml
+        - rust
+    shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+    palette:
+        primary: 'indigo'
+        accent: 'indigo'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true 
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/ChuXiaoYi?tab=repositories' 
+    - type: 'book'
+      link: 'https://blog.csdn.net/weixin_40156487'
+  disqus: 'chuxiaoyi'
